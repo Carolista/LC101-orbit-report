@@ -12,4 +12,12 @@ export class Satellite {
         this.orbitType = orbitType;
         this.operational = operational;
     }
+
+    // Step 6
+    // this breaks the code as soon as the first object is fetched
+    shouldShowWarning(): boolean { 
+        return this.type.toLowerCase() === 'space debris';
+    }
+
+
 }

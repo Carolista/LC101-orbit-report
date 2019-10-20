@@ -1,0 +1,13 @@
+input, button {
+    font-size: 12pt;
+}
+
+button.search {
+    background-color: #34495E;
+    color: whitesmoke;
+}
+
+button.reset {
+    background-color: grey;
+    color: whitesmoke;
+}

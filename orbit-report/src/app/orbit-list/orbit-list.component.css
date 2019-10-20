@@ -21,6 +21,10 @@ table {
     color: #fff
 }
 
+.zebra {
+    background-color: #15628f
+}
+
 th, td {
     text-align: left;
     margin: 5px 10px;
