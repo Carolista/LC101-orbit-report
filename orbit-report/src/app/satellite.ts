@@ -14,7 +14,6 @@ export class Satellite {
     }
 
     // Step 6
-    // this breaks the code as soon as the first object is fetched
     shouldShowWarning(): boolean { 
         return this.type.toLowerCase() === 'space debris';
     }

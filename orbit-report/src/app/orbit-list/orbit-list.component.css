@@ -3,6 +3,10 @@
     color: #dd5;
 }
 
+tr:nth-child(even) {
+    background-color: #a8bdc9
+}
+
 .warning {
     background-color: #da8a8a;
 }
@@ -18,11 +22,7 @@ table {
 
 .header-row {
     background: #34495E;
-    color: #fff
-}
-
-.zebra {
-    background-color: #15628f
+    color: #fff;
 }
 
 th, td {

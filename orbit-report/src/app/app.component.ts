@@ -29,6 +29,7 @@ export class AppComponent {
         }.bind(this));
     }
 
+    // Step 8
     search(searchTerm: string): void {
         let matchingSatellites: Satellite[] = [];
         searchTerm = searchTerm.toLowerCase();
