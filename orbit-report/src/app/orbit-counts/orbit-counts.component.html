@@ -1,5 +1,14 @@
-<!-- <h3>Satellite Counts:</h3>
-<div [class.counts] = "countSatellites()">
-    <div>Total:<span>{{satellites.length}}</span></div>     
-    <div *ngFor = "satType of typeList">{{satType.type}}:<span *ngFor = "satCount of typeList">{{satCount.count}}</span></div>
-</div> -->
+<h3>Satellite Counts</h3>
+
+ <div class="counts">
+    <div>TOTAL: <span>{{satellites.length}}</span></div>
+    <div>Space Debris: <span>{{countSatellites('Space Debris')}}</span></div>
+    <div>Communication: <span>{{countSatellites('Communication')}}</span></div>
+    <div>Probe: <span>{{countSatellites('Probe')}}</span></div>
+    <div>Positioning: <span>{{countSatellites('Positioning')}}</span></div>
+    <div>Space Station: <span>{{countSatellites('Space Station')}}</span></div>
+    <div>Telescope: <span>{{countSatellites('Telescope')}}</span></div>
+ </div>
+
+ <!-- Still need to figure out how to use *ngFor to propogate rows... 
+not sure how to call placeholder countSatellites method on another placeholder without breaking page -->
