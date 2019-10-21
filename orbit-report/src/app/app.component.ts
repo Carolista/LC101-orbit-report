@@ -11,6 +11,7 @@ export class AppComponent {
     title = 'orbit-report';
     sourceList: Satellite[] = [];
     displayList: Satellite[] = [];
+    isMatch: boolean = false;
 
     constructor() {
         let satellitesUrl = 'https://handlers.education.launchcode.org/static/satellites.json';
@@ -23,19 +24,21 @@ export class AppComponent {
                     satellite = new Satellite(fetchedSatellites[i].name, fetchedSatellites[i].type, fetchedSatellites[i].launchDate, fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);
                     this.sourceList.push(satellite);  
                 }
-                // satellite.shouldShowWarning();
                 this.displayList = this.sourceList.slice(0);
             }.bind(this));
         }.bind(this));
     }
 
     // Step 8
+    // Bonus Mission Part C - Add ability to search on type & orbit type
     search(searchTerm: string): void {
         let matchingSatellites: Satellite[] = [];
         searchTerm = searchTerm.toLowerCase();
         for(let i=0; i < this.sourceList.length; i++) {
             let name = this.sourceList[i].name.toLowerCase();
-            if (name.indexOf(searchTerm) >= 0) {
+            let type = this.sourceList[i].type.toLowerCase();
+            let orbitType = this.sourceList[i].orbitType.toLowerCase();
+            if (name.indexOf(searchTerm) >= 0 || type.indexOf(searchTerm) >= 0 || orbitType.indexOf(searchTerm) >= 0) {
                 matchingSatellites.push(this.sourceList[i]);
             }
         }

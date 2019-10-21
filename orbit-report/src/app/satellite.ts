@@ -18,5 +18,4 @@ export class Satellite {
         return this.type.toLowerCase() === 'space debris';
     }
 
-
 }

@@ -7,10 +7,9 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-    <tr *ngFor="let entry of satellites" [class.zebra] = "">
+    <tr *ngFor="let entry of satellites">
         <td>{{entry.name}}</td>
         <td [class.warning] = "entry.shouldShowWarning()">{{entry.type}}</td>
-        <!-- <td>{{entry.type}}</td> -->
         <td>{{entry.operational}}</td>
         <td>{{entry.orbitType}}</td>
         <td>{{entry.launchDate}}</td>
