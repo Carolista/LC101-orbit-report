@@ -11,10 +11,6 @@ tr:nth-child(even) {
     background-color: #da8a8a;
 }
 
-/* .match {
-    font-weight: bold;
-} */
-
 table {
   color: #111;
   border-radius: 5px;

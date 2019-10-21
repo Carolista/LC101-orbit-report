@@ -30,7 +30,7 @@ export class AppComponent {
     }
 
     // Step 8
-    // Bonus Mission Part C - Add ability to search on type & orbit type
+    // Bonus Mission Part C-1 - Added ability to search on type & orbit type
     search(searchTerm: string): void {
         let matchingSatellites: Satellite[] = [];
         searchTerm = searchTerm.toLowerCase();
@@ -42,8 +42,6 @@ export class AppComponent {
                 matchingSatellites.push(this.sourceList[i]);
             }
         }
-        // assign this.displayList to be the the array of matching satellites
-        // this will cause Angular to re-make the table, but now only containing matches
         this.displayList = matchingSatellites;
     }
 
