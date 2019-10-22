@@ -1,13 +1,22 @@
+div.main {
+    display: flex;
+    flex-direction: row;
+}
+
+div.orbitReport {
+    margin-right: 40px;
+}
+
 input, button {
     font-size: 12pt;
 }
 
 button.search {
-    background-color: #34495E;
+    background-color: #6d991a;
     color: whitesmoke;
 }
 
 button.reset {
-    background-color: grey;
+    background-color: #34495E;
     color: whitesmoke;
 }

@@ -1,8 +1,9 @@
 .counts {
     background: #34495E;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 2px;
     width: 225px;
+    padding: 10px;
 }
 
 .counts div {
@@ -11,4 +12,12 @@
 
 .counts span {
     float: right;
+}
+
+div.total {
+    font-weight: bold;
+}
+
+div.types {
+    font-weight: normal;
 }

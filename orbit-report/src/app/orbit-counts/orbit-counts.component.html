@@ -1,6 +1,6 @@
 <h3>Satellite Counts</h3>
 
- <div class="counts">
+<!-- <div class="counts">
     <div>TOTAL: <span>{{satellites.length}}</span></div>
     <div>Space Debris: <span>{{countSatellites('Space Debris')}}</span></div>
     <div>Communication: <span>{{countSatellites('Communication')}}</span></div>
@@ -8,7 +8,12 @@
     <div>Positioning: <span>{{countSatellites('Positioning')}}</span></div>
     <div>Space Station: <span>{{countSatellites('Space Station')}}</span></div>
     <div>Telescope: <span>{{countSatellites('Telescope')}}</span></div>
- </div>
+</div> -->
 
- <!-- Still need to figure out how to use *ngFor to propogate rows... 
-not sure how to call placeholder countSatellites method on another placeholder without breaking page -->
+
+<!-- Bonus Mission Part C - use ngFor to propagate types and counts instead -->
+
+<div class="counts">
+    <div class = "total">TOTAL: <span>{{satellites.length}}</span></div>
+    <div class = "types" *ngFor = "let satType of typeList">{{satType}}: <span>{{countSatellites(satType)}}</span></div>
+</div>

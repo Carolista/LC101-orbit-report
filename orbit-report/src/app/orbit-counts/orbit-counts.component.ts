@@ -16,7 +16,7 @@ export class OrbitCountsComponent implements OnInit {
     @Input() satellites: Satellite[];
 
     // Bonus Mission Part B
-    countSatellites(satType): number {
+    countSatellites(satType: string): number {
         let countSats = 0;
         for (let i=0; i < this.satellites.length; i++) {
             if (this.satellites[i].type === satType) {
@@ -28,6 +28,6 @@ export class OrbitCountsComponent implements OnInit {
 
     // Bonus Mission Part C-2
     typeList = ['Space Debris', 'Communication', 'Probe', 'Positioning', 'Space Station', 'Telescope'];
-    
+
 }
 

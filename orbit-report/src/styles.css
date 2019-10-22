@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+h3 {
+    color: #34495E;
+    font-family: 'Roboto Slab', serif;
+    font-size: 3vw;
+}
+
+body {
+    font-family: 'Helvetica', 'Courier';
+    padding: 0px 20px;
+}
